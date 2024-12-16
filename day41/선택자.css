@@ -1,0 +1,42 @@
+h3{color :brown}
+
+/*1. 전체 선택자*/
+*{font-size :25px}
+
+/*2. 마크업 선택자*/
+p{color :cyan}
+
+/*3. class속성값 선택자*/
+.구역1번{color:blueviolet}
+
+/*4.id속성값 선택자*/
+#구역2번{color:chocolate}
+
+.title{
+    font-family:"궁서","굴림";  /*1.폰트*/
+    font-size:"20px";       /*2.폰트 사이즈*/
+    font-style: italic;     /*3.폰트 기울기*/
+    font-weight: 100;       /*4.폰트 진하기*/
+
+    color:blue
+}
+.content{
+color:yellow;           /*5.글꼴 색상*/
+word-spacing: 2cm;          /*6. 단어들간의 간격 : 어간*/
+letter-spacing: 2cm;         /*7. 글자들간의 간격 : 자간*/
+line-height:1cm;            /*8. 줄간격, %단위, 기본값 150%*/
+}
+.글쓴이구역{
+    text-align: center;     /*9. 내용물 가로 정렬, left, right, center*/
+    text-decoration: underline overline line-through; /*10. 내용물에 밑줄*/
+    /*
+        underline 밑줄
+        overline 윗줄
+        line-through 취소선
+    */
+    text-shadow: 55px -55px 4px red; /*11.내용물의 그림자*/
+    /*
+        shadow 축
+        ------중심점------>
+    */
+}

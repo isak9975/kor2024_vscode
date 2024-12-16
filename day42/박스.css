@@ -1,0 +1,62 @@
+/* CSS 주석 */
+/* 마크업 1객당 1개의 구역을 갖는다 */
+
+/* 1. *전체 선택자 */
+
+    /* 구역 테두리 : 선굵기 선종류 선색상*/
+*{border : 1px solid red;} /*빨간선으로 굵기가 1인 테두리 만들기*/
+
+/* 2. 마크업 선택자 */
+html{border : 3px solid yellow;}
+body{border : 5px solid blue;}
+
+/* 3. .클래스 선택자 */
+.box1{
+    /*선종류 : silid 실선, dotted 점선, dashed 파선*/
+    border-top : 4px solid pink; /*위쪽 테두리*/
+}
+.box2{/*div1구역*/
+    border-top : 1px solid skyblue; /**/
+    border-right : 2px dotted skyblue; /**/
+    border-bottom : 3px dashed black;
+    border-left : 4px double green;/* 둥근 모서리, 단위 px*/
+ 
+    
+    border-radius : 10px;
+    /*x축 y축 흐림정도 색상*/
+    box-shadow: 3px 3px 3px orange;
+    
+    text-align: center;
+    width : 400px;/* 구열의 가로 사이즈*/
+    height : 300px;/* 구열의 세로 사이즈*/ 
+
+    margin : 0 auto; /* 박스 가운데 정렬 */
+
+}
+.box3{ /*div2구역*/
+    padding : 50px; /*[안쪽여백] 테두리와 구역내 내용물의 사이여백*/
+    margin: 30px;/*[바깥여백] 테두리와 다른 구역의 사이 여백*/
+}
+
+.bo4x{
+    width :  100px;         /* 구역의 가로 크기*/
+    padding-top : 10px;     /* 위쪽 안쪽 여백*/
+    padding-right : 20px;   /* 오른쪽 안쪽 여백*/    
+    padding-bottom : 30px;  /* 아래 안쪽 여백*/
+    padding-left : 40px;    /* 왼쪽 안쪽 여백*/
+
+    margin-top : 40x;       /*위쪽 바깥 여백*/
+    margin-right : 30x;     /*오른쪽 바깥 여백*/
+    margin-left : 20x;      /*왼쪽 바깥 여백*/
+    margin-bottom : 20x;    /*아래 바깥 여백*/
+
+    background-color: skyblue;
+}
+
+.box5{
+    width : 300px;    /* 구역의 가로 크기 지정*/
+    margin : 0 auto;  /*구역 가로 가운데 정렬*//*지정한 선택자의 구역을 가로 가운데 정렬*/
+    text-align: center; /* 지정한 선택자의 내용물(content)를 가로 가운데 정렬 */
+}
+#block1{background-color: red;}
+#block2{background-color: pink;}

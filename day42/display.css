@@ -1,0 +1,27 @@
+/* 확인용 */
+*{border:1px solid red;}
+.s1{
+    display : inline;               /* 기본값이라 넣었을때 차이점 없음 */
+    /* in line 한줄을 차지하지 않음*/
+    width: 100px; height: 100px;    /* 넣었을때 차이점 없음 */
+    margin: 20px;                   /* 넣었을때 차이점 없음 */
+    
+    padding: 10px;}     /* inline 안쪽 여백이 위/아래 적용 불가능 */
+
+.s2{
+    display: block; /* block은 한줄 차지*/
+    width: 100px; height: 100px;    /*적용가능*/
+    margin: 10px;                   /*블럭은 바깥 여분도 가능하다*/
+    padding: 10px;                  /*블럭은 안쪽 여백도 가능하다*/
+}
+
+.s3{
+    display: inline-block;  /*in line block은 모두 가능하다*/        
+    width: 100px; height: 100px;    /*적용가능*/
+    margin: 10px;                   /*블럭은 바깥 여분도 가능하다*/
+    padding: 10px;                  /*블럭은 안쪽 여백도 가능하다*/
+}
+
+.s4{
+    display: none;          /*글자 사라짐*/
+}
