@@ -1,0 +1,279 @@
+<1>
+let memberTable =[];
+
+function signUp(){
+    console.log(`signUp() 실행`);
+
+    let signid = document.querySelector(`.signid`);
+    console.log(signid);
+    let signpw = document.querySelector(`.signpw`);
+    console.log(signpw);
+    let signnickname = document.querySelector(`.signmickname`);
+
+    let id = signid.vvalue;
+    let pw = signpw.value;
+    let nickname = signnickname.value;
+
+    let memberDto = {id:id,pw:pw,nickname:nickname};
+    console.log(memberDto);
+
+    memberTable.push(memberDto);
+    console.log(memberTable);
+
+    alert(`회원가입에 성공하셨습니다`);
+
+    signid.value=``;
+    signpw,value=``;
+    signnickname=``;
+}
+
+function login({
+    console.log(`login 실행`);
+
+    let loginid = document.querySelector(`.loginid`);
+    let loginpw = document.querySelector(`.loginpw`);
+
+    let id = loginid.value;
+    let pw = loginpw.value;
+
+    let loginState = false;
+
+    for(let index=0; index<=memberTable.length-1;index+){
+        let memberDto = memberTable[index];
+        if(memberDto.id == id && memberDto.pw == pw){
+            let  loginState = true;
+            return;
+        }
+    }
+    if(loginState){
+        alert(`로그인 성공했습니다`);
+    }
+    else{
+        alert(`맞는 회원정보가 없습니다`);
+    }
+}
+
+<2>
+let memberTable = [];
+
+fuction signUp(){
+    console.log(`signUp() 실행`);
+
+    let signid = document.querySelector(`.signid`);
+    console.log(signid);
+    let signpw = document.querySelector(`.signpw`);
+    console.log(signpw);
+    let signnickname = document.quertSelector(`.signnickname`);
+    console.log(signnickname);
+
+    let id = signid.value;
+    let pw = signpw.value;
+    let nickname = signnickname.value;
+
+    let memberDto = {id:id, pw:pw,nickname:nickname};
+    console.log(memberDto);
+
+    memberTable.push(memberDto);
+    console.log(memberDto);
+
+    alert(`회원가입에 성공하셨습니다`);
+
+    signid.value = ``;
+    signpw.value = ``;
+    signnickname = ``;
+}
+
+function login(){
+    consnole.log(`login() 실행`);
+
+    let loginid = document.querySelector(`.loginid`);
+    let loginpw = document.quertSleector(`.loginpw`);
+
+    let id = loginid.value;
+    let pw = loginpw.value;
+
+    let loginState = false;
+
+    for(let index=0;index <= mamberTable.length-1; index++){
+        let memberDto = memberTable[index];
+        if(memberDto.id == id && memberDto.pw == pw){
+            let loginState = true;
+            return;
+        }
+    }
+    if(loginState){
+        alert(`로그인 성공했습니다`);
+    }
+    else{
+        alert(`맞는 회원정보가 없습니다`);
+    }
+}
+
+<3>
+let memberTable = [];
+
+function signUp(){
+    console.log(`signUp()실행`);
+    
+    let signid = document.querySelector(`.signid`);
+    console.log(signid);
+    let signpw = document.querySelector(`.signpw`);
+    console.log(signpw);
+    let signnickname = document.quertySelector(`.signnickname`);
+    console.log(signnickname);
+
+    let id = signid.value;
+    let pw = signpw.value;
+    let nickname = signnickname.value;
+
+    let memberDto = {id:id, pw:pw, nickname:nickname};
+    console.log(memberDto);
+
+    memberTable.push(memberDto);
+    console.log(memberTable);
+
+    alert(`회원가입에 성공하셨습니다`);
+
+    signid.value=``;
+    signpw.value=``;
+    signnickname=``;
+}
+
+function login(){
+    console.log(`login() 실행`);
+
+    let loginid = document.querySelector(.`loginid`);
+    let loginpw=document.querySelector(`.loginpw`);
+
+    let id = loginid.value;
+    let pw = loginpw.value;
+
+    let loginState = false;
+
+    for(let index=0; index<=memberTable.length-1;index++){
+        let memberDto = memberTable[index];
+        if(memberDto.id == id && memberDto.pw == pw){
+            let loginState = true;
+            return
+        }
+    }
+    if(loginState){
+        alert(`로그인 성공했습니다`)'
+    }
+    else{
+        alert(`맞는 회원정보가 없습니다`);
+    }
+}
+
+<4>
+let memberTable == [];
+
+function signUP(){
+    console.log(`signUP() 실행`);
+
+    let signid = document.querySelector(`.signid`);
+    console.log(signid);
+    let signpw = document.querySelector(`.signpw`);
+    console.log(signpw);
+    let signnickname = document.querySelector(`.signnickname`);
+    console.log(signnickname);
+
+    let id = signid.value;
+    let pw = signpw.value;
+    let nickname = signnickname.value;
+
+    let memberDto = {id:id, pw:pw, nickname :nickname};
+    console.log(memberDto);
+
+    memberTable.push(memberDto);
+    console.log(memberDto);
+
+    alert(`회원가입에 성공하셨습니다`);
+
+    signid.value=``;
+    signpw.value=``;
+    signnickname=``;
+}
+
+function login(){
+    console.log(`login() 실행`);
+
+    let loginid = document.querySelector(`.loginid`);
+    let loginpw = document.querySelector(`.loginpw`);
+
+    let id = logindid.value;
+    let pw = loginpw.value;
+
+    let loginState = false;
+
+    for(let index=0;index <= memberTable.length-1;index++){
+        let memberDto = memberTable[index];
+        if(memberDto.id == id && memberDto.pw == pw){
+            let loginState = true;
+            return;
+        }
+    }
+    if(loginState){
+        alert(`로그인 성공했습니다`);
+    }
+    else{
+        alert(`맞는 회원정보가 없습니다`);
+    }
+}
+
+<5>
+let memberTable = [];
+
+function signUp(){
+    console.log(`signUp() 실행`);
+
+    let signid = document.querySelector(`.signid`);
+    console.log(signid);
+    let signpw = document.querySelector(`.signpw`);
+    console.log(signpw);
+    let signnickname = document.querySelector(`.signnickname`);
+    console.log(signnickname);
+
+    let id = signid.value;
+    let pw = singpw.value;
+    let nickname = signnickname.value;
+
+    let memberDto = {id:id,pw:pw,nickname:nickname};
+    console.log(memberDto);
+
+    memberTable.push(memberDto);
+    console.log(memberTable);
+
+    alert(`회원가입에 성공하셨습니다`);
+
+    signid.value=``;
+    signpw.value=``;
+    signnickname=``;
+}
+
+function login(){
+    console.log(`login() 실행`);
+
+    let loginid = document.querySelector(`.loginid`);
+    let loginpw = document.querySelector(`.loginpw`);
+
+    let id = loginid.value;
+    let pw = loginpw.value;
+
+    let loginState = false;
+
+    for(let index=0;index <= memberTable.length-1; index++){
+        let memberDto = memberTable[index];
+        if(memberDto.id == id && memberDto.pw == pw){
+            let lodingState = true;
+            return;
+        }
+    }
+    if(loginState){
+        alert(`로그인 성공했습니다`);
+
+    }
+    else{
+        alert(`맞는 회원정보가 없습니다`);
+    }
+}
