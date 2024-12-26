@@ -1,0 +1,43 @@
+<!-- Todolist 구현하기-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='todolist.css'>
+   
+</head>
+<body>
+
+    <!-- 작업 순서 : 1. HTML 2.CSS 3.JS -->
+     <div id="wrap"><!--전체를 감싼 레이아웃 / 구역 마크업-->
+        <h3>나만의 할일 목록</h3>
+        <div class="todoTop"><!--상단구역-->
+            <input class="contInput" type="text"/>
+            <button onclick='등록함수()' class="addBtn">등록</button>
+        </div><!--상단 end-->
+
+        <div class="contBox"><!-- 하나의 컨텐츠 구역-->
+            <div class="cont">1교시 수업 듣기</div>
+            <div class="contBtns">
+                <button onclick='수정함수()' class="updateBtn">수정</button>
+                <button onclick='삭제함수()' class="deleteBtn">삭제</button>
+            </div>
+        </div><!--하나의 컨텐츠 end-->
+
+        <div class="contBox success"><!-- 하나의 컨텐츠 구역-->
+            <div class="cont">여행 준비하기</div>
+            <div class="contBtns">
+                <button class="updateBtn">수정</button>
+                <button class="deleteBtn">삭제</button>
+            </div>
+        </div><!--하나의 컨텐츠 end-->
+
+     </div><!--본문 end-->
+     <script src='todolist.js'></script>
+    
+</body>
+</html>
